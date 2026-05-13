@@ -2,7 +2,7 @@
 
 A recruitment dashboard where TechKraft reviewers score job candidates and admins see everything.
 
-> 📸 *Screenshots of the dashboard are available in the repository's GitHub interface.*
+![Dashboard](docs\screenshots\image.png)
 
 ## Quick Start
 

@@ -2,8 +2,9 @@
 
 A recruitment dashboard where TechKraft reviewers score job candidates and admins see everything.
 
-![Dashboard](docs\screenshots\image.png)
-
+![Dashboard](docs\screenshots\1.png)
+![cadidate details](docs\screenshots\2.png)
+![login](docs\screenshots\3.png)
 ## Quick Start
 
 ```bash

@@ -1,0 +1,118 @@
+/* Shared component styles — nav bar, pills, buttons */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-bottom: 1px solid var(--color-hairline-violet);
+}
+
+.nav-brand {
+  color: var(--color-on-primary);
+}
+
+.lime-chip-sm {
+  background-color: var(--color-accent-lime);
+  color: var(--color-ink-deep);
+  border-radius: var(--rounded-xs);
+  padding: 0 6px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.nav-user {
+  color: var(--color-on-dark-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.role-pill {
+  background-color: var(--color-accent-violet-mid);
+  color: var(--color-on-primary);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  padding: 2px 8px;
+  border-radius: var(--rounded-xs);
+}
+
+.btn-ghost {
+  background-color: var(--color-on-dark-faint);
+  color: var(--color-on-primary);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--rounded-xl);
+  border: none;
+  cursor: pointer;
+  min-height: 36px;
+  transition: background-color 0.15s ease;
+}
+
+.btn-ghost:active {
+  background-color: var(--color-hairline-violet);
+}
+
+.btn-ghost:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Shared status pills */
+.status-pill {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  padding: 2px 8px;
+  border-radius: var(--rounded-xs);
+  white-space: nowrap;
+}
+
+.status-new { background-color: var(--color-accent-violet-mid); color: var(--color-on-primary); }
+.status-reviewing { background-color: var(--color-accent-violet-deep); color: var(--color-on-primary); }
+.status-interviewed { background-color: var(--color-accent-violet); color: var(--color-on-primary); }
+.status-offered { background-color: var(--color-accent-lime); color: var(--color-ink-deep); }
+.status-rejected { background-color: var(--color-accent-pink); color: var(--color-ink-deep); }
+.status-archived { background-color: var(--color-hairline-violet); color: var(--color-on-dark-muted); }
+
+.skill-tag {
+  background-color: var(--color-surface-canvas-dark);
+  border: 1px solid var(--color-hairline-violet);
+  color: var(--color-on-dark-muted);
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: var(--rounded-xs);
+}
+
+/* Score form error */
+.score-error {
+  color: var(--color-accent-pink);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* States */
+.loading-state,
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-section) var(--spacing-xl);
+  color: var(--color-on-dark-muted);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .nav-user {
+    display: none;
+  }
+}

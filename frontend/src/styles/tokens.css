@@ -1,0 +1,65 @@
+/* ============================================
+   TechKraft Candidate Dashboard — Design Tokens
+   Based on Sentri Design System (skill.md)
+   ============================================ */
+
+:root {
+  /* --- Brand & Accent --- */
+  --color-primary: #150f23;
+  --color-ink-deep: #1f1633;
+  --color-accent-lime: #c2ef4e;
+  --color-accent-pink: #fa7faa;
+  --color-accent-violet: #6a5fc1;
+  --color-accent-violet-deep: #422082;
+  --color-accent-violet-mid: #79628c;
+
+  /* --- Surface --- */
+  --color-surface-canvas-dark: #1f1633;
+  --color-surface-night: #150f23;
+  --color-surface-canvas-light: #ffffff;
+  --color-surface-press-light: #f0f0f0;
+  --color-surface-press-stronger: #efefef;
+  --color-hairline-violet: #362d59;
+  --color-hairline-cool: #cfcfdb;
+  --color-hairline-cloud: #e5e7eb;
+
+  /* --- Text --- */
+  --color-on-primary: #ffffff;
+  --color-ink: #1f1633;
+  --color-ink-press: #1a1a1a;
+  --color-on-dark-muted: rgba(255, 255, 255, 0.72);
+  --color-on-dark-faint: rgba(255, 255, 255, 0.18);
+
+  /* --- Semantic --- */
+  --color-ring-focus: rgba(59, 130, 246, 0.5);
+
+  /* --- Typography --- */
+  --font-display: 'Space Grotesk', 'Rubik', -apple-system, system-ui, sans-serif;
+  --font-ui: 'Rubik', -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-code: Monaco, Menlo, 'Ubuntu Mono', monospace;
+
+  /* --- Spacing --- */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-section: 96px;
+
+  /* --- Border Radius --- */
+  --rounded-xs: 4px;
+  --rounded-sm: 6px;
+  --rounded-md: 8px;
+  --rounded-lg: 10px;
+  --rounded-xl: 12px;
+  --rounded-xxl: 18px;
+  --rounded-full: 9999px;
+
+  /* --- Elevation --- */
+  --shadow-1: rgba(0, 0, 0, 0.08) 0 2px 8px 0;
+  --shadow-2: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.1) 0 4px 6px -4px;
+  --shadow-3: rgb(21, 15, 35) 0 0 8px 6px;
+  --shadow-4: rgba(0, 0, 0, 0.18) 0 0.5rem 1.5rem;
+}

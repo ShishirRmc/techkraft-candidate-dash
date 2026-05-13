@@ -1,0 +1,394 @@
+/* Candidate Detail Page — Dark canvas */
+
+.detail-content {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: var(--spacing-xxl) var(--spacing-xl);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-on-dark-muted);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-bottom: var(--spacing-xxl);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--color-on-primary);
+}
+
+/* --- Profile Header --- */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+  flex-wrap: wrap;
+}
+
+.profile-info h1 {
+  color: var(--color-on-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.profile-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.profile-email {
+  color: var(--color-on-dark-muted);
+}
+
+.profile-role {
+  color: var(--color-accent-violet);
+  font-weight: 600;
+}
+
+.profile-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+/* --- Section Layout --- */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.detail-section {
+  background-color: var(--color-surface-night);
+  border: 1px solid var(--color-hairline-violet);
+  border-radius: var(--rounded-xl);
+  padding: var(--spacing-xl);
+}
+
+.detail-section.full-width {
+  grid-column: 1 / -1;
+}
+
+.section-title {
+  color: var(--color-on-primary);
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.section-title .text-eyebrow {
+  color: var(--color-on-dark-muted);
+}
+
+/* --- Scores Table --- */
+.scores-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scores-table th {
+  text-align: left;
+  color: var(--color-on-dark-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--color-hairline-violet);
+}
+
+.scores-table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-on-primary);
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-hairline-violet);
+}
+
+.scores-table tr:last-child td {
+  border-bottom: none;
+}
+
+.score-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--rounded-xs);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.score-high { background-color: var(--color-accent-lime); color: var(--color-ink-deep); }
+.score-mid { background-color: var(--color-accent-violet-mid); color: var(--color-on-primary); }
+.score-low { background-color: var(--color-accent-pink); color: var(--color-ink-deep); }
+
+.no-scores {
+  color: var(--color-on-dark-muted);
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.btn-delete-score {
+  background: none;
+  border: none;
+  color: var(--color-accent-pink);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--rounded-xs);
+  line-height: 1;
+  transition: background-color 0.15s ease;
+}
+
+.btn-delete-score:hover {
+  background-color: rgba(250, 127, 170, 0.15);
+}
+
+/* --- Score Form --- */
+.score-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.score-form-row {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: var(--spacing-md);
+}
+
+.score-form select,
+.score-form input,
+.score-form textarea {
+  background-color: var(--color-surface-canvas-dark);
+  border: 1px solid var(--color-hairline-violet);
+  border-radius: var(--rounded-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-on-primary);
+  font-size: 14px;
+  min-height: 40px;
+}
+
+.score-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.score-form select:focus,
+.score-form input:focus,
+.score-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-violet);
+  box-shadow: inset rgba(0, 0, 0, 0.15) 0 2px 10px;
+}
+
+.btn-submit-score {
+  background-color: var(--color-on-primary);
+  color: var(--color-ink-deep);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--rounded-md);
+  border: none;
+  cursor: pointer;
+  min-height: 44px;
+  transition: background-color 0.15s ease;
+}
+
+.btn-submit-score:active {
+  background-color: var(--color-surface-press-light);
+}
+
+.btn-submit-score:disabled {
+  background-color: var(--color-hairline-cloud);
+  color: var(--color-on-dark-muted);
+  cursor: not-allowed;
+}
+
+.score-success {
+  color: var(--color-accent-lime);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* --- AI Summary --- */
+.summary-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.btn-generate {
+  background-color: var(--color-accent-violet-deep);
+  color: var(--color-on-primary);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--rounded-md);
+  border: none;
+  cursor: pointer;
+  min-height: 44px;
+  transition: background-color 0.15s ease;
+  align-self: flex-start;
+}
+
+.btn-generate:active {
+  background-color: var(--color-accent-violet);
+}
+
+.btn-generate:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.summary-loading {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-on-dark-muted);
+  font-size: 14px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-hairline-violet);
+  border-top-color: var(--color-accent-lime);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.summary-text {
+  color: var(--color-on-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: var(--color-surface-canvas-dark);
+  border: 1px solid var(--color-hairline-violet);
+  border-radius: var(--rounded-sm);
+  padding: var(--spacing-lg);
+}
+
+.summary-error {
+  color: var(--color-accent-pink);
+  font-size: 14px;
+}
+
+/* --- Admin Notes --- */
+.admin-notes {
+  background-color: var(--color-surface-canvas-dark);
+  border: 1px solid var(--color-hairline-violet);
+  border-radius: var(--rounded-sm);
+  padding: var(--spacing-lg);
+  color: var(--color-on-primary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.admin-notes-view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.admin-edit-btn {
+  align-self: flex-start;
+}
+
+.admin-notes-edit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.admin-notes-textarea {
+  background-color: var(--color-surface-canvas-dark);
+  border: 1px solid var(--color-hairline-violet);
+  border-radius: var(--rounded-sm);
+  padding: var(--spacing-lg);
+  color: var(--color-on-primary);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.admin-notes-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-violet);
+  box-shadow: inset rgba(0, 0, 0, 0.15) 0 2px 10px;
+}
+
+.admin-notes-actions {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.admin-badge {
+  background-color: var(--color-accent-pink);
+  color: var(--color-ink-deep);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  padding: 2px 8px;
+  border-radius: var(--rounded-xs);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+  }
+
+  .score-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Delete score button */
+.btn-delete-score {
+  background: none;
+  border: none;
+  color: var(--color-accent-pink);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: var(--rounded-xs);
+  line-height: 1;
+  transition: background-color 0.15s ease;
+}
+
+.btn-delete-score:hover {
+  background-color: var(--color-on-dark-faint);
+}
